@@ -1,0 +1,130 @@
+/* Color Theme */
+:root {
+    --jeopardyBlue: #060CE9;
+    --darkBlue: #030115;
+    --white: #f0eff7;
+    --nocolorpickedyet: #016064; 
+   }
+
+/* universal styling */    
+
+html {
+    font-size: 125%;
+}
+
+body {
+    background-color: var(--darkBlue);
+    color: var(--white);
+    font-size: 1rem;
+    font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: .8rem;
+}
+
+h2, h3, p {
+    line-height: 1.2;
+}
+
+button {
+    background-color: var(--jeopardyBlue);
+    color: var(--white);
+    padding-left: 1rem;
+    padding-right: 1rem;
+    border: solid var(--white);
+}
+
+/* Style for Header */
+
+header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 1.5rem;
+    font-size: clamp(28px, 3vw, 3vw);
+    border-bottom: .4rem dotted;
+    margin-bottom: 1rem;
+}
+
+/* Style for Timer*/
+
+#timerBox {
+    display: flex;
+    justify-content: center;
+}
+
+#startButton {
+    font-size: clamp(24px, 2.5vw, 2.5vw);
+}
+
+#timer {
+    font-size: clamp(24px, 2.5vw, 2.5vw);
+}
+
+/* Style for Questions and Answer Boxes*/
+
+#questionBox {
+    display: none;
+    justify-content: center;
+    padding-top: 1rem;
+}
+
+#questionBox h2 {
+    font-size: clamp(24px, 2.5vw, 2.5vw);
+    text-align: center;
+}
+
+#answerBox {
+    display: none;
+    flex-direction: column;
+    width: 67%;
+    margin: 1rem auto;
+    justify-content: space-evenly;
+    padding-left: 1rem;
+    padding-right: 1rem;
+    row-gap: 1rem;
+    
+}
+
+#answerBox button {
+    font-size: clamp(18px, 2vw, 2vw);
+}
+
+#gradeBox {
+    display: flex;
+    justify-content: center;
+}
+
+#gradeBox p {
+    font-size: clamp(18px, 2vw, 2vw);
+}
+
+/* Style for Entering Initials*/
+
+#promptInitials {
+    display: none;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+#saveInput {
+    display: none;
+    justify-content: center;
+    padding-top: 2rem;
+    font-size: clamp(18px, 2vw, 2vw);
+}
+
+#tryAgain {
+    display: none;
+    justify-content: center;
+    padding-top: 2rem;
+}
+
+/* Style for Footer / Leaderboard */ 
+
+footer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    font-size: clamp(18px, 2vw, 2vw);
+}
