@@ -4,7 +4,70 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./assests/reset.css" />
-    <link rel="stylesheet" href="./assests/style.css" />
+    <!-- <link rel="stylesheet" href="./assets/reset.css" /> -->
+    <link rel="stylesheet" href="./assets/style.css" />
     <title>The Quiz about Quizzes by John Kersey</title>
 </head>
+
+<body>
+    <header>
+        <h1> The Quiz about Quizzes! </h1>
+    </header>
+
+    <main>
+        <section id="timerBox"> <!-- Timer / Score Display -->
+            <button id="startButton">
+                <h2 id="startButtonColor"> Start Quiz</h2>
+            </button>
+
+            <div id="timer"></div> 
+            <div id="score"></div>
+        </section>
+
+        <section id="questionBox"> <!-- Question Pop Ups -->
+            <h2 id="question">In the classic version of Trivial Pursuit, what color catagory cards represent questions about Science and Nature</h2>
+        </section>
+
+        <section id="answerBox"> <!--Answer Buttons -->
+            <button><p id="answerA">Blue</p></button>
+            <button><p id="answerB">Green</p></button>
+            <button><p id="answerC">Pink</p></button>
+            <button><p id="answerD">Brown</p></button>
+        </section>
+
+        <section id="gradeBox">
+            <p id="grade"></p>
+        </section>
+
+        <section id="promptInitials">
+            <button>
+                <p id="promptButton">Click here to save your initials and score!</p>
+            </button>
+        </section>
+
+        <section id="saveInput"> <!-- Scoreboard -->
+            <form>
+                <p>Please enter your initials</p>
+                    <div>
+                        <input type="text" id="initials" /> 
+                    </div> <!-- Extra div here to change where below button appears -->
+                <button type="button" id="saveButton">SAVE</button>
+              </form> 
+        </section>
+
+        <section id="tryAgain">
+            <button>
+                <p id="tryAgainButton"> Would you like to try again? </p>
+            </button>
+        </section>
+    </main>
+
+    <footer> <!-- Leaderboard -->
+        <h3 id="scoreboardHeader"></h3>
+      
+        <p id="scoreboard"> </p>
+    </footer>
+    
+    <script src="./assets/script.js"></script>
+</body>
+</html>
