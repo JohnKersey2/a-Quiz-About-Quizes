@@ -1,33 +1,49 @@
-# a-Quiz-About-Quizes# 04 Web APIs: Code Quiz
+# Create a Quiz
 
-## Your Task
+For this assignment, I was to create a quiz with a few sporadic features added in. 
 
-At some point in your journey to become a full-stack web developer, you’ll likely be asked to complete a coding assessment&mdash;perhaps as part of an interview process. A typical coding assessment includes both multiple-choice questions and interactive coding challenges. 
+## Link to Deployed Application 
 
-To help familiarize you with these tests and allow you to use the skills covered in this module, this Challenge invites you to build a timed coding quiz with multiple-choice questions. This app will run in the browser and will feature dynamically updated HTML and CSS powered by JavaScript code that you write. It will have a clean, polished, and responsive user interface. 
+<https://johnkersey2.github.io/a-Quiz-About-Quizes/>
 
-This week’s coursework will equip you with all the skills you need to succeed in this assignment.
+## Application Screenshot 
 
-## User Story
+![Screenshot of the Application](./assets/applicationscreenshot.png)
 
-```
-AS A coding boot camp student
-I WANT to take a timed quiz on JavaScript fundamentals that stores high scores
-SO THAT I can gauge my progress compared to my peers
-```
+## Criteria
 
-## Acceptance Criteria
+According to the user story, I was to create a quiz with the following acceptance criteria. 
 
-```
-GIVEN I am taking a code quiz
-WHEN I click the start button
-THEN a timer starts and I am presented with a question
-WHEN I answer a question
-THEN I am presented with another question
-WHEN I answer a question incorrectly
-THEN time is subtracted from the clock
-WHEN all questions are answered or the timer reaches 0
-THEN the game is over
-WHEN the game is over
-THEN I can save my initials and my score
-```
+The quiz starts when user clicks a start button
+
+A timer starts and the user is presented with a question
+
+When one question is answered, another appears
+
+When a question is answered incorrectly, the timer is decremented 15 seconds
+
+The quiz had to stop asking questions when the clock reached 0 or the user completed all questions
+
+After the quiz was over, the user could save their initials and score. 
+
+## Known Issues 
+Input for initials will only be entered if user hits save button, not if they hit the enter key. Only solution found is deprecated.  
+
+##  Current Development Notes
+
+Too much is hard-coded. Current plan is to rewrite to a single function pulling from an array, but mvp is completed for now. 
+
+Change initial input to only take alphabet characters
+
+## Future Development Notes
+Potential features to add:
+
+Change functionality of scoreboard to only show highest score, or if possible, 3 highest scores
+
+Add final question that asks how many times you clicked the A answer?
+
+Add time taken to complete to scoreboard
+
+Add buttons for different quizzes.
+
+Add endless mode. 
